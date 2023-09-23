@@ -41,9 +41,6 @@
                   <a class="nav-link" href="donate.html">Donate</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="shop.html">Shop</a>
-              </li>
-              <li class="nav-item">
                   <a class="nav-link" href="about.html">About the Shelter</a>
               </li>
               <li class="nav-item">
@@ -102,14 +99,14 @@
 <div class="container-fluid">
 <div class="container">
 
- <form class="needs-validation"  novalidate> 
+ <form class="needs-validation"  target="_blank" action="https://formsubmit.co/edmharalcones@gmail.com" method="POST" novalidate> 
         <label for="validationFullName" class="form-label " >Full Name:</label> <br>
         <input type="text" class="form-control" id="validationFullName"   pattern="[a-zA-Z\s]*" required>
         <div class="valid-feedback">Looks good!</div>
         <div class="invalid-feedback">Please enter your full name.</div>
       <br>
         <label for="validationEmail" class="form-label">Email Address:</label>
-        <input type="email" class="form-control" id="validationEmail" required>
+        <input type="email" class="form-control"  id="validationEmail" required>
         <div class="valid-feedback">Looks good!</div>
         <div class="invalid-feedback">Please enter your email address.</div>
       <br>
@@ -202,29 +199,4 @@
 
 
 </body>
-<script>
-   (function () {
-    'use strict'
-  
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          } else {
-            event.preventDefault()
-            event.stopPropagation()
-            var successAlert = document.getElementById('successAlert');
-            successAlert.classList.add('show');
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
-  </script>
-  
 </html>
