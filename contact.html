@@ -92,29 +92,19 @@
     </div>
 </div>
 <!-- Contact -->
-<div class="alert alert-success alert-dismissible fade" role="alert" id="successAlert">
-  Thank you! Your message has been sent. We'll be in touch within 1-2 business days.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
 <div class="container-fluid">
 <div class="container">
 
- <form class="needs-validation"  target="https://edmharalcones.github.io/contact.html" action="https://formsubmit.co/18969b8e10734503ba87448aca094626" method="POST" novalidate> 
+ <form class="needs-validation"  target="_self" action="https://formsubmit.co/18969b8e10734503ba87448aca094626" method="POST" novalidate> 
         <label for="name" class="form-label " >Full Name:</label> <br>
         <input type="text" class="form-control" name="name"   pattern="[a-zA-Z\s]*" required>
-        <div class="valid-feedback">Looks good!</div>
-        <div class="invalid-feedback">Please enter your full name.</div>
-      <br>
+        <br>
         <label for="email" class="form-label">Email Address:</label>
         <input type="email" class="form-control"  name="email" required>
-        <div class="valid-feedback">Looks good!</div>
-        <div class="invalid-feedback">Please enter your email address.</div>
-      <br>
+         <br>
         <label for="validationPhone" class="form-label" >Phone Number:</label>
           <input type="number" class="form-control" id="validationPhone" required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please enter your phone number.</div>
-      
+         
       <br>
       <div class="col">
         <p>Subject:</p>
@@ -131,12 +121,10 @@
         <div class="col">
           <label for="Message" class="form-label">Message:</label>
           <textarea class="form-control" id="Message" rows="3" name="message" required></textarea>
-          <div class="valid-feedback">Looks good!</div>
-        <div class="invalid-feedback">Please add a message. </div>
-        </div>
 
       <div class="col" style="margin-top: 5%;">
         <button class="btn-petcare shadow-none border-0" type="submit">Send</button>
+        <input type="hidden" name="_next" value="https://edmharalcones.github.io/contact.html">
     
       </div>
     </form>  
